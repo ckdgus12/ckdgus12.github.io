@@ -133,6 +133,7 @@ $(document).ready(function() {
     filterList.init();
 
 })(jQuery); // End of use strict
+
 const backToTop = document.getElementById('backtotop');
 
 function checkScroll() {

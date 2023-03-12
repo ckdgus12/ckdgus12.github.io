@@ -112,6 +112,8 @@ a:focus {
 p {
   font-size: 18px;
   line-height: 1.5;
+  padding-top: 30px;
+
 }
 p.lead {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -863,9 +865,10 @@ aside.cta-quote span.quote {
   transition: all 0.5s;
 }
 .portfolio-filter #filters li .filter.active {
-  background-color: #EF4035;
-  color: white;
-  border-color: #EF4035;
+  background-color: white;
+  color: red;
+  border-color:gainsboro ;
+  
 }
 #portfoliolist .mix {
   width: 31%;
@@ -877,7 +880,7 @@ aside.cta-quote span.quote {
 #portfoliolist .mix .portfolio-wrapper {
   overflow: hidden;
   position: relative !important;
-  background: #222;
+  background: gainsboro;
   cursor: pointer;
 }
 #portfoliolist .mix .portfolio-wrapper img {
@@ -903,7 +906,7 @@ aside.cta-quote span.quote {
   transition: all 0.5s;
 }
 #portfoliolist .mix .portfolio-wrapper .caption .caption-bg {
-  background: #EF4035;
+  background: black;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1197,6 +1200,20 @@ body.vintage .testimonials .owl-controls .owl-next {
    height: 460px;
 }
 
+.about-content {
+  border: #000 solid 3px;
+  height: 460px;
+}
+div.navbar-header img{
+  margin-left: -60px;
+  margin-top: 5px;
+}
+#work.bg-gray{
+  background-color:black ;
+}
+.promotional{
+  color: lightslategrey;
+}
 #backtotop {
   background-color: rgb(47, 48, 89);
   width: 40px;
@@ -1214,6 +1231,11 @@ body.vintage .testimonials .owl-controls .owl-next {
   z-index: 999;
 }
 
+/* 아이콘 적용 방법
+  1. ::after (요소 뒤에 content 추가) 가상 요소에서,
+  2. content: "폰트어썸 유니코드" 를 넣고,
+  3. font-family: FontAwesome 이라고 넣으면 됨
+  */
 #backtotop::after {
   content: "\f077";
   font-family: FontAwesome;
@@ -1231,4 +1253,19 @@ body.vintage .testimonials .owl-controls .owl-next {
   opacity: 1;
   visibility: visible;
   background-color: rgb(47, 48, 49);
+}
+
+@media only screen and (min-width: 1200px) {
+  .inner {
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .skill-container {
+    display: none;
+  }
+  .roadmap-desc {
+    display: none;
+  }
 }
